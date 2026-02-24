@@ -1,11 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikodem Hofman — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <a href="/szablon/index.html"></a>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">NH<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">O mnie</a></li>
+      <li><a href="#skills">Umiejętności</a></li>
+      <li><a href="#projects">Projekty</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Dostępny do współpracy</div>
+      <h1 class="hero-name">
+        Nikodem<br>
+        <span class="line2">Hof<span class="accent">man</span></span>
+      </h1>
+      <p class="hero-desc">
+        <strong>Technik Programista</strong> z Poznania. Buduję aplikacje webowe, konsolowe i desktopowe. Specjalizuję się w <strong>HTML/CSS/JS/PHP/MYSQL</strong> oraz <strong>C#</strong>.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Zobacz projekty</a>
+        <a href="#contact" class="btn btn-ghost">Kontakt</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Przewiń
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">O mnie</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Cześć! Jestem <strong>Nikodem Hofman</strong>, uczeń Technikum Ekonomiczno-Administracyjnego nr 1 w Poznaniu, gdzie zdobywam tytuł technika programisty.</p>
+        <p>Pasjonuję się tworzeniem aplikacji — od stron internetowych, przez aplikacje konsolowe, aż po aplikacje desktopowe. Lubię pisać kod, który jest zarówno funkcjonalny, jak i dobrze zorganizowany.</p>
+        <p>W wolnym czasie rozwijam własne projekty i stale poszerzam swoje umiejętności w nowych technologiach. Jestem otwarty na współpracę i nowe wyzwania.</p>
+      </div>
+      <div class="about-info">
+        <div class="info-row">
+          <span class="info-label">Imię i nazwisko</span>
+          <span class="info-value">Nikodem Hofman</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Lokalizacja</span>
+          <span class="info-value">Poznań, Polska</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Szkoła</span>
+          <span class="info-value">Technikum Ekonomiczno-Administracyjne nr 1 w Poznaniu</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Specjalność</span>
+          <span class="info-value">Technik Programista</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Portfolio</span>
+          <span class="info-value"><a href="https://nikolospl.github.io">nikolospl.github.io</a></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Status</span>
+          <span class="info-value" style="color: #4ade80;">● Dostępny</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="background: var(--bg2);">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Umiejętności</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-icon">🌐</div>
+          <span class="skill-card-name">Web Development</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MYSQL</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-icon">🖥️</div>
+          <span class="skill-card-name">Desktop & Konsola</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">.NET</span>
+          <span class="skill-tag">WinForms</span>
+          <span class="skill-tag">Console Apps</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-icon">🛠️</div>
+          <span class="skill-card-name">Narzędzia</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Visual Studio</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-icon">📚</div>
+          <span class="skill-card-name">W trakcie nauki</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">TypeScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projekty</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-thumb">
+          <span class="project-thumb-label">Wkrótce</span>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Web App</div>
+          <div class="project-title">Projekt 01</div>
+          <div class="project-desc">Opis projektu pojawi się wkrótce. Tutaj znajdzie się krótka informacja o tym, co projekt robi i jakie problemy rozwiązuje.</div>
+          <div class="project-footer">
+            <div class="project-techs">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JS</span>
+            </div>
+            <a href="#" class="project-link">Zobacz →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">
+          <span class="project-thumb-label">Wkrótce</span>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Desktop App</div>
+          <div class="project-title">Projekt 02</div>
+          <div class="project-desc">Aplikacja desktopowa napisana w C#. Szczegóły projektu zostaną dodane wkrótce po ukończeniu.</div>
+          <div class="project-footer">
+            <div class="project-techs">
+              <span class="project-tech">C#</span>
+              <span class="project-tech">.NET</span>
+            </div>
+            <a href="#" class="project-link">Zobacz →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">
+          <span class="project-thumb-label">Wkrótce</span>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Console App</div>
+          <div class="project-title">Projekt 03</div>
+          <div class="project-desc">Aplikacja konsolowa. Opis oraz link do repozytorium zostanie dodany po zakończeniu prac.</div>
+          <div class="project-footer">
+            <div class="project-techs">
+              <span class="project-tech">C#</span>
+            </div>
+            <a href="#" class="project-link">Zobacz →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background: var(--bg2);">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Kontakt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <h3>Porozmawiajmy<br>o projekcie.</h3>
+        <p>Jeśli masz ciekawy projekt, chcesz współpracować lub po prostu porozmawiać — napisz do mnie. Chętnie odpiszę.</p>
+        <div class="contact-links">
+          <a href="https://github.com/NikolosPl" target="_blank" class="contact-item">
+            <span class="contact-item-icon">⌥</span>
+            <div>
+              <div>NikolosPl</div>
+              <div class="contact-item-label">GitHub</div>
+            </div>
+          </a>
+          <a href="mailto:twoj@email.com" class="contact-item">
+            <span class="contact-item-icon">@</span>
+            <div>
+              <div>niko2109h@gmail.com</div>
+              <div class="contact-item-label">E-mail</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/xykdbrrv" method="POST">
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Imię</label>
+            <input required type="text" name="imie" placeholder="Jan Kowalski" />
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input required name="email" type="email" placeholder="jan@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Wiadomość</label>
+            <textarea required name="message" placeholder="Cześć Nikodem, chciałem..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="align-self: flex-start; border: none;">Wyślij wiadomość</button>
+        </div>
+      </div>
+
+      </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Nikodem Hofman</span>
+    <span>Poznań, Polska</span>
+    <span class="info-value"><a href="https://nikolospl.github.io">nikolospl.github.io</a></span>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
